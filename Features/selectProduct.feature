@@ -2,7 +2,7 @@
 Funcionalidade: Selecionar Produto na Loja
     @Loja
     Cenario: Selecao de Produto com Sucesso
-        Dado que acesso a página inicial do site
+        Dado que acesso a página inicial do site 
         Quando preencho o usuário como "standard_user"
         E a senha "sauce_secret" e clico no botao Login
         Entao exibe "Products" no titulo da secao

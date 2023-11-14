@@ -19,7 +19,7 @@ namespace MyNamespace
             _scenarioContext = scenarioContext;
         }
 
-        [BeforeScenario]
+        // [BeforeScenario] // Porque fizemos Hooks
         public void SetUp()
         {
             // Instanciando o ChromeDriver através do WebDriverManager
@@ -29,7 +29,7 @@ namespace MyNamespace
             driver.Manage().Window.Maximize();
         }
 
-        [AfterScenario]
+        // [AfterScenario] // Porque fizemos Hooks
         public void TearDown()
         {
             driver.Quit(); // encerrou o Selenium
